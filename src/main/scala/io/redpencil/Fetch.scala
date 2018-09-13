@@ -88,7 +88,7 @@ object Fetch {
       return model
     }
     catch {
-      case e => { println(e); e.printStackTrace;  }
+      case e => { println(e); e.printStackTrace; System.exit(-1)  }
     }
     finally {
       inputStream.close()
